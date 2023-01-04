@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apt update;apt install wkhtmltopdf curl -y
 
-COPY package.json ./
+COPY ./package.json ./
 
 RUN npm install
 
